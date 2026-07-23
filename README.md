@@ -1,4 +1,4 @@
-🧠 NeuralGPT
+ NeuralGPT
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 💡 What is NeuralGPT?
+##  What is NeuralGPT?
 
 Everyone uses LLMs. Few understand what is actually happening inside them.
 
@@ -31,7 +31,7 @@ It ships with a Chainlit-powered web UI so you can chat with your trained model 
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
   Raw Text Input
@@ -86,24 +86,24 @@ It ships with a Chainlit-powered web UI so you can chat with your trained model 
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---|---|
-| 🔥 Pure PyTorch implementation | Every layer coded from scratch — no transformer library abstractions |
-| 🎯 Multi-head self-attention | Full Q/K/V projection with causal masking for autoregressive generation |
-| 📍 Positional encodings | Learned position vectors injected into the embedding space |
-| ➕ Residual connections | Skip connections throughout every transformer block for stable deep training |
-| ⚖️ Layer normalization | Pre-norm applied before each sub-layer for training stability |
-| 🔤 GPT-2 BPE tokenizer | Uses tiktoken's GPT-2 byte-pair encoding for subword tokenization - text to integer ids and back |
-| 🔁 Autoregressive generation | Temperature + top-k sampling loop (greedy argmax also available via `generate_text_simple`) - model generates one token at a time |
-| 💬 Chainlit web UI | Chat with your trained model in a browser ; no CLI required |
-| 💾 Model persistence | Save trained weights to disk, reload and resume without retraining |
-| ✅ Environment checker | `python_environment_check.py` verifies PyTorch and CUDA before training |
+|  Pure PyTorch implementation | Every layer coded from scratch — no transformer library abstractions |
+|  Multi-head self-attention | Full Q/K/V projection with causal masking for autoregressive generation |
+|  Positional encodings | Learned position vectors injected into the embedding space |
+|  Residual connections | Skip connections throughout every transformer block for stable deep training |
+|  Layer normalization | Pre-norm applied before each sub-layer for training stability |
+|  GPT-2 BPE tokenizer | Uses tiktoken's GPT-2 byte-pair encoding for subword tokenization - text to integer ids and back |
+|  Autoregressive generation | Temperature + top-k sampling loop (greedy argmax also available via `generate_text_simple`) - model generates one token at a time |
+|  Chainlit web UI | Chat with your trained model in a browser ; no CLI required |
+|  Model persistence | Save trained weights to disk, reload and resume without retraining |
+|  Environment checker | `python_environment_check.py` verifies PyTorch and CUDA before training |
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology | Why This Choice |
 |---|---|---|
@@ -114,7 +114,7 @@ It ships with a Chainlit-powered web UI so you can chat with your trained model 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 NeuralGPT/
@@ -136,7 +136,7 @@ NeuralGPT/
 > `gpt2/` and the final `.pth` weights file are excluded via `.gitignore` - the checkpoint is downloaded and the fine-tuned weights are saved locally when you run the training script. This keeps the repo lightweight while the actual weights live where they belong: on your hardware.
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -190,7 +190,7 @@ This script checks Python version, PyTorch installation, and CUDA availability. 
 
 ---
 
-## ▶️ Running the Project
+##  Running the Project
 
 ### Step 1 - Train the model and save weights
 
@@ -227,7 +227,7 @@ Generation is simply the repeated forward passes. At each step, pass the full co
 I'm now genuinely comfortable with tensor shapes and broadcasting, writing custom training loops with manual gradient zeroing, gradient clipping to prevent exploding gradients, and understanding what `.backward()` actually computes. Libraries like HuggingFace take all of this away.  
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Train on a larger and more diverse text corpus
 - [x] Add temperature and top-k sampling to the generation loop
