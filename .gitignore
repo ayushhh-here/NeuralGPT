@@ -1,0 +1,17 @@
+# Downloaded pretrained GPT-2 checkpoint files
+gpt2/
+
+# Fine-tuned model weights
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+.chainlit/
